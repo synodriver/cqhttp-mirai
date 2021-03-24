@@ -10,9 +10,12 @@ pluginManagement {
     repositories {
         maven(url = "https://dl.bintray.com/kotlin/kotlin-eap")
         maven(url = "https://mirrors.huaweicloud.com/repository/maven")
+        gradlePluginPortal()
         mavenCentral()
         jcenter()
     }
 }
 
-rootProject.name = "cqhttp-mirai"
+rootProject.name = "onebot"
+include(":onebot-mirai")
+include(":onebot-kotlin")
